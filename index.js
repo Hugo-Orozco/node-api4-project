@@ -1,7 +1,5 @@
-// require your server and launch it
 require('dotenv').config();
-const express = require('express');
-const server = express();
+const server = require('./api/server');
 
 if (process.env.NODE_ENV === 'production') {
     console.log('This means this code is deployed.');
